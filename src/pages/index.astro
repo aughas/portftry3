@@ -4,6 +4,7 @@ import Button from '../components/Button.astro';
 import Link from '../components/Link.astro';
 import { Image } from 'astro:assets';
 import thumbsup from "../assets/images/thumbsup.png";
+import Flipbook from "../components/Flipbook.astro"
 ---
 <MainLayout title="Titel">
 	<!-- <article>
@@ -81,9 +82,40 @@ import thumbsup from "../assets/images/thumbsup.png";
     </div>
   </div>
 </section>
+<!-- bg kladd! -->
+<div class="bg-flower-bg bg-no-repeat" style="background-size: 400px; background-position: left 90%;"></div>
 
 	  </article>
 	  <div class="flex justify-center my-4">
 		<div class="border-t w-1/2 border-black"></div>
 	  </div>
+
+	  <section id="projects3" class="relative bg-center bg-no-repeat bg-contain bg_projects z-0">
+	
+			<div class="sticky top-20 z-50 ml-4">
+				<h1 class=" font-bold text-6xl">PERSONAL <br> PROJECTS</h1>
+				<p class=" font-serif italic"> (It's pretty much my paintings) </p>
+			</div>
+		
+		<article class="grid grid-cols-1 lg:grid-cols-12 overflow-hidden mx-auto ">
+			<img src="6.webp" alt="" class="m-2 lg:m-0 lg:object-cover transition-all lg:col-start-5 lg:col-span-4 lg:mt-40 slide3">
+			<img src="4.webp" alt="" class="m-2 lg:m-0 lg:object-cover transition-all lg:col-start-10 lg:col-span-2 slide4">
+			<img src="9.webp" alt="" class="m-2 lg:m-0 lg:object-cover transition-all lg:col-start-5 lg:col-span-3 lg:mt-40 slide5">
+			<img src="demon.webp" alt="" class="m-2 lg:m-0 lg:object-cover transition-all lg:col-start-10 lg:col-span-2 slide6">
+			<img src="faces.webp" alt="" class="m-2 lg:m-0 lg:object-cover transition-all lg:col-start-6 lg:col-span-2 lg:mt-20 slide7">
+			<img src="mosh.webp" alt="" class="m-2 lg:m-0 lg:object-cover transition-all lg:col-start-9 lg:col-span-3 slide8">
+			<img src="himmel.png" alt="" class="m-2 lg:m-0 lg:object-cover transition-all lg:col-start-5 lg:col-span-2 lg:mt-20 slide9">
+			<img src="halo.png" alt="" class="m-2 lg:m-0 lg:object-cover transition-all lg:col-start-8 lg:col-span-2 lg:mt-40 slide10">
+			<img src="pokemon.png" alt="" class="m-2 lg:m-0 lg:object-cover transition-all lg:col-start-11  lg:col-span-2 lg:mt-5 slide11">
+			<img src="pink.png" alt="" class="m-2 lg:m-0 lg:object-cover transition-all lg:col-start-6 lg:col-span-1 lg:mt-20 slide12">
+			<img src="bla.png" alt="" class="m-2 lg:m-0 lg:object-cover transition-all lg:col-start-8 lg:col-span-4 lg:mt-20 slide13">
+			<img src="dino.png" alt="" class="m-2 lg:m-0 lg:object-cover transition-all lg:col-start-6 lg:col-span-2 lg:mt-10 slide14">
+			<img src="prints.png" alt="" class="m-2 lg:m-0 lg:object-cover transition-all lg:col-start-9 lg:col-span-2 slide15">
+		   
+		</article>
+		<div class="flex justify-center text-center mt-40"><p class=" font-serif italic text-xs"> (Flip through my sketchbooks by clicking on the pages) </p></div>
+		<div class="mt-20"><Flipbook/></div>
+	</section>
+
+
 </MainLayout>
