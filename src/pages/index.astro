@@ -388,16 +388,12 @@ import Flipbook from "../components/Flipbook.astro"
 
 </style>
 
-<!-- <script is:inline src="/tobii.min.js"></script>
-<script defer>
-  const tobii = new Tobii();
-</script>
- -->
+
 
 <script>
 	// Get the cursor image element
-	const cursorImage = document.getElementById('cursor-image');
-	const imageCursor = document.getElementById('image-cursor');
+	const cursorImage = document.getElementById('cursor-image') as HTMLElement;
+	const imageCursor = document.getElementById('image-cursor') as HTMLImageElement;
   
 	// Select all the links with the 'hover-link' class
 	const links = document.querySelectorAll('.hover-link');
@@ -407,13 +403,15 @@ import Flipbook from "../components/Flipbook.astro"
 	  link.addEventListener('mouseenter', (e) => {
 		// Get the image to display based on the `data-image` attribute
 		const imageSrc = link.getAttribute('data-image');
-		imageCursor.src = imageSrc; // Update the cursor image
+		if (imageSrc) {
+		  imageCursor.src = imageSrc; // Update the cursor image
+		}
   
 		// Show the cursor image and start following the mouse
 		cursorImage.classList.add('show');
 	  });
   
-	  link.addEventListener('mousemove', (e) => {
+	  link.addEventListener('mousemove', (e: MouseEvent) => {
 		// Update the position of the cursor image to follow the mouse
 		cursorImage.style.left = `${e.pageX + 10}px`; // Position offset to the right
 		cursorImage.style.top = `${e.pageY + 10}px`; // Position offset below the cursor
@@ -425,6 +423,7 @@ import Flipbook from "../components/Flipbook.astro"
 	  });
 	});
   </script>
+  
 
 <script>
     import gsap from "gsap";
