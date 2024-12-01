@@ -14,7 +14,7 @@ import Flipbook from "../components/Flipbook.astro"
 		<Image src={thumbsup} alt=""></Image>
 	</article> -->
 
-	<article id="hero" class="h-screen relative">
+	<article id="hero" class="h-screen relative animate__animated animate__fadeInLeftBig">
 	<div class="left absolute bottom-5 left-3">
 			<h1 class="-mb-6 relative z-10">HELLO, I'M</h1>
 			<img class="h-52 -mb-6 -ml-4" src="hero2.png" alt="">
@@ -22,7 +22,7 @@ import Flipbook from "../components/Flipbook.astro"
 			<h1>FROM GOTHENBURG, SWEDEN</h1>
 	</div>
 
-	<div class="right absolute bottom-5 right-3">
+	<div class="right absolute bottom-5 right-3 animate__animated animate__fadeInRightBig">
 		<img class="h-[30rem]" src="9.webp" alt="">
 	</div>
 	</article>
@@ -31,14 +31,16 @@ import Flipbook from "../components/Flipbook.astro"
 	  </div>
 
 
-	  <article class="h-screen relative">
+
+
+	  <article id="about" class="h-screen relative ">
 		<div class="p-4 flex flex-row justify-between ">
 			<p class="w-[25rem] text-xl">My name is <span class="font-bold">August Hasselblad.</span> <br> I am a 25-year-old <span class="font-bold">multimedia design</span> student at KEA in Copenhagen. I work part-time as a graphic designer and also create paintings.</p>
 			<ul class="text-s">
 				<li>København, Denmark</li>
-				<li>augu.brem@gmail.com</li>
+				<li><a href="mailto:someone@example.com" >augu.brem@gmail.com</a></li>
 				<li>+46721770889</li>
-				<li><a href="instagram.com">instagram</a></li>
+				<li><a href="https://www.instagram.com/august.hasselblad/">instagram</a></li>
 			</ul>
 		</div>
 
@@ -90,11 +92,182 @@ import Flipbook from "../components/Flipbook.astro"
 		<div class="border-t w-1/2 border-black"></div>
 	  </div>
 
+	  <article id="websites">
+        <div class="sticky top-20 z-50 ml-4">
+          <h1 class="font-bold text-6xl">WEBSITES</h1>
+          <p class="font-serif italic"> (Schoolwork and private) </p>
+        </div>
+      
+        <a href="https://spine-studio.com/" target="_blank" class="relative group" id="link1">
+            <div class="ml-auto max-w-[60%] mt-2">
+              <div class="flex gap-16">
+                <h1 class="font-display text-6xl -mt-3">01</h1>
+                <h1 class="text-6xl">SPINE-STUDIO.COM</h1>
+              </div>
+              <h2 class="text-5xl font-display italic ml-32">Redesigned existing website<br>for a school project</h2>
+            </div>
+            <img src="spine.webp" alt="Spine Studio" class="hoverImage w-56 absolute opacity-0 pointer-events-none">
+            <div class="ml-auto max-w-[60%] flex justify-start my-8">
+              <div class="border-t w-[80%] border-black"></div>
+            </div>
+        </a>
+      
+        <a href="https://expertment.netlify.app/ " target="_blank" class="relative group" id="link2">
+          <div class="ml-auto max-w-[60%] mt-2">
+            <div class="flex gap-16">
+              <h1 class="font-display text-6xl -mt-3">02</h1>
+              <h1 class="text-6xl">EXPERTMENT FONT</h1>
+            </div>
+            <h2 class="text-5xl font-display italic ml-32">Website and content for custom<br>made font</h2>
+          </div>
+          <img src="typeface.jpg" alt="Expertment Font" class="hoverImage w-56 absolute opacity-0 pointer-events-none">
+          <div class="ml-auto max-w-[60%] flex justify-start my-8">
+            <div class="border-t w-[80%] border-black"></div>
+          </div>
+        </a>
+      
+        <a href="https://team10-hojskolendk.netlify.app/" target="_blank" class="relative group" id="link3">
+          <div class="ml-auto max-w-[60%] mt-2">
+            <div class="flex gap-16">
+              <h1 class="font-display text-6xl -mt-3">03</h1>
+              <h1 class="text-6xl">HÖJSKOLENDK.DK</h1>
+            </div>
+            <h2 class="text-5xl font-display italic ml-32">Redesigned existing website<br>for a school project</h2>
+          </div>
+          <img src="hojskolenweb.webp" alt="Højskolen" class="hoverImage w-56 absolute opacity-0 pointer-events-none">
+          <div class="ml-auto max-w-[60%] flex justify-start my-8">
+            <div class="border-t w-[80%] border-black"></div>
+          </div>
+        </a>
+      
+        <a href="https://startling-entremet-207b3c.netlify.app/" target="_blank" class="relative group" id="link4">
+          <div class="ml-auto max-w-[60%] mt-2">
+            <div class="flex gap-16">
+              <h1 class="font-display text-6xl -mt-3">04</h1>
+              <h1 class="text-6xl">DIGITAL CLEANUP DAY</h1>
+            </div>
+            <h2 class="text-5xl font-display italic ml-32">Another redesign for school</h2>
+          </div>
+          <img src="digitalclean.webp" alt="Digital Cleanup" class="hoverImage w-56 absolute opacity-0 pointer-events-none">
+          <div class="ml-auto max-w-[60%] flex justify-start my-8">
+            <div class="border-t w-[80%] border-black"></div>
+          </div>
+        </a>
+      
+        <a href="https://holdihaand.netlify.app/" target="_blank" class="relative group" id="link5">
+          <div class="ml-auto max-w-[60%] mt-2">
+            <div class="flex gap-16">
+              <h1 class="font-display text-6xl -mt-3">05</h1>
+              <h1 class="text-6xl">HOLD I HÅND MUSIC MGMT</h1>
+            </div>
+            <h2 class="text-5xl font-display italic ml-32">Webdesign for copenhagen<br>based music management</h2>
+          </div>
+          <img src="hih.png" alt="Hold I Hånd" class="hoverImage w-56 absolute opacity-0 pointer-events-none">
+          <div class="ml-auto max-w-[60%] flex justify-start my-8">
+            <div class="border-t w-[80%] border-black"></div>
+          </div>
+        </a>
+      
+        <a href="https://plasticsucks.netlify.app/" target="_blank" class="relative group" id="link6">
+          <div class="ml-auto max-w-[60%] mt-2">
+            <div class="flex gap-16">
+              <h1 class="font-display text-6xl -mt-3">06</h1>
+              <h1 class="text-6xl">PLASTIC SUCKS</h1>
+            </div>
+            <h2 class="text-5xl font-display italic ml-32">Plastic change redesign one<br>page school project</h2>
+          </div>
+          <img src="plastic.webp" alt="Plastic Sucks" class="hoverImage w-56 absolute opacity-0 pointer-events-none">
+          <div class="ml-auto max-w-[60%] flex justify-start my-8">
+            <div class="border-t w-[80%] border-black"></div>
+          </div>
+        </a>
+      
+        <a href="https://www.figma.com/proto/LBhp6Ex43fwv2Cn2UmtHhD/Karusell-gang?node-id=162-329&starting-point-node-id=162%3A329" target="_blank" class="relative group" id="link7">
+          <div class="ml-auto max-w-[60%] mt-2">
+            <div class="flex gap-16">
+              <h1 class="font-display text-6xl -mt-3">07</h1>
+              <h1 class="text-6xl">KARRUSEL</h1>
+            </div>
+            <h2 class="text-5xl font-display italic ml-32">Karrusel festival redesign<br>list-view school project</h2>
+          </div>
+          <img src="karruselweb.webp" alt="Karrusel Festival" class="hoverImage w-56 absolute opacity-0 pointer-events-none">
+          <div class="ml-auto max-w-[60%] flex justify-start my-8">
+            <div class="border-t w-[80%] border-black"></div>
+          </div>
+        </a>
+      
+        <a href="https://itmvgang.netlify.app/" target="_blank" class="relative group" id="link8">
+          <div class="ml-auto max-w-[60%] mt-2">
+            <div class="flex gap-16">
+              <h1 class="font-display text-6xl -mt-3">08</h1>
+              <h1 class="text-6xl">I TRÅD MED VERDEN</h1>
+            </div>
+            <h2 class="text-5xl font-display italic ml-32">Website and content<br>developed for school</h2>
+          </div>
+          <img src="itmv.webp" alt="I Tråd Med Verden" class="hoverImage w-56 absolute opacity-0 pointer-events-none">
+          <div class="ml-auto max-w-[60%] flex justify-start my-8">
+            <div class="border-t w-[80%] border-black"></div>
+          </div>
+        </a>
+      
+    </article>
+  
+	<div class="flex justify-center my-4">
+	  <div class="border-t w-1/2 border-black"></div>
+	</div>
+
+
+
+	  <section id="graphic" class="relative bg-center bg-no-repeat bg-contain bg_projects z-10 load3">
+		<div class="sticky top-20 z-50 ml-4">
+			<h1 class=" font-bold text-6xl">GRAPHIC <br> WORK</h1>
+			<p class=" font-serif italic"> (Paid work, school work and personal projects) </p>
+		</div>
+		<article class="grid grid-cols-1 lg:grid-cols-12 overflow-hidden mx-auto ">
+			<img src="apx.png" alt="" class="m-2 lg:m-0  lg:object-cover transition-all lg:col-start-5 lg:col-span-2 lg:mt-20 lg:hover:scale-105" >
+			<div class="flex flex-col md:justify-center md:items-end items-start md:gap-5 gap-6 lg:col-start-10 lg:col-span-2">
+				<a href="2.webp" class="lightbox md:w-[365px] w-[95%] h-full ">
+					<img
+					  src="2.webp"
+					  alt="gothenburg hardcore punkband cover"
+					  class="shadow-xl mt-12 md:mt-0 hover:scale-105 transition duration-500"
+					/>
+				  </a>
+			</div>
+			<div class="m-2 lg:m-0 lg:object-cover transition-all lg:col-start-8 lg:col-span-2 lg:mt-20">
+				<div class="yaki-container slide">
+					<img src="yaki1.webp" alt="" class="yaki-main">
+					<img src="yaki2.webp" alt="" class="yaki-fan">
+					<img src="yaki4.webp" alt="" class="yaki-fan">
+					<img src="yaki5.webp" alt="" class="yaki-fan">
+					<img src="yaki6.webp" alt="" class="yaki-fan">
+				</div>
+			</div>
+			<img src="typefaceposter.jpg" alt="" class=" lg:object-cover transition-all lg:col-start-4 lg:col-span-3 lg:mt-40 slide2">
+			
+			<div class="m-2 lg:m-0 lg:col-start-8 lg:col-span-3 flip-container lg:mt-20">
+				<div class="flip-card">
+					<img src="front.webp" alt="" class=" lg:object-cover transition-all front">
+					<img src="back.webp" alt="" class="back">
+				</div>
+				
+			</div>
+			<img src="karrusel.png" alt="" class="lg:col-start-10 col-span-2">
+			<img src="logoglow.png" alt="" class="lg:col-start-5 -mt-44 col-span-4">
+			<img src="hojskolen.png" alt=""class="lg:col-start-7 mt-10 col-span-3">
+		</article>
+	</section>
+
+
+</article>
+<div class="flex justify-center my-4">
+  <div class="border-t w-1/2 border-black"></div>
+</div>
+
 	  <section id="projects3" class="relative bg-center bg-no-repeat bg-contain bg_projects z-0">
 	
 			<div class="sticky top-20 z-50 ml-4">
 				<h1 class=" font-bold text-6xl">PERSONAL <br> PROJECTS</h1>
-				<p class=" font-serif italic"> (It's pretty much my paintings) </p>
 			</div>
 		
 		<article class="grid grid-cols-1 lg:grid-cols-12 overflow-hidden mx-auto ">
@@ -113,9 +286,303 @@ import Flipbook from "../components/Flipbook.astro"
 			<img src="prints.png" alt="" class="m-2 lg:m-0 lg:object-cover transition-all lg:col-start-9 lg:col-span-2 slide15">
 		   
 		</article>
-		<div class="flex justify-center text-center mt-40"><p class=" font-serif italic text-xs"> (Flip through my sketchbooks by clicking on the pages) </p></div>
-		<div class="mt-20"><Flipbook/></div>
+		<div class="flex justify-center text-center mt-40"><p class=" font-serif italic text-xs blink"> (Flip through my sketchbooks by clicking on the pages) </p></div>
+		<div class="mt-4"><Flipbook/></div>
 	</section>
 
 
+</article>
+<div class="flex justify-center my-4">
+  <div class="border-t w-1/2 border-black"></div>
+</div>
+
+<section class="h-screen relative">
+	<!-- Title section in the top right -->
+	<div class="absolute top-0 right-0 p-8">
+	  <h1 class="text-8xl font-display italic">August Hasselblad</h1>
+	  <h2 class="text-8xl font-bold mt-2 text-right">I'D LOVE TO <br> HEAR FROM YOU</h2>
+	</div>
+  
+	<!-- Content section with image and paragraph in the bottom right -->
+	<div class="absolute bottom-0 left-0 p-4 flex items-end gap-8">
+	  <img class="h-[40rem] w-[25rem] object-cover" src="cv.webp" alt="">
+	  <p class="max-w-[40rem] text-4xl font-display italic">Thank you for scrolling all the way down here. I am in the midst of looking for an internship within web development, graphic design, and everything inbetween. <a href="#about" class="opacity-75">Contact</a> for questions or referances</p>
+	</div>
+  </section>
+  
+  
+
 </MainLayout>
+
+
+
+<style>
+	.flip-card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.3s ease;
+  transform-style: preserve-3d;
+}
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: auto;
+  backface-visibility: hidden;
+}
+.front {
+  transform: rotateY(0deg); 
+}
+.back {
+  transform: rotateY(180deg);
+}
+.flip-container:hover .flip-card {
+  transform: rotateY(180deg);
+}
+
+.yaki-container {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+}
+
+
+
+.yaki-main {
+  position: relative;
+  z-index: 10;
+}
+
+/* Fan images: initially overlap with the main image */
+.yaki-fan {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Same width as the main image */
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  opacity: 0; /* Hidden initially */
+  transform-origin: left center; /* Make the images fan out from the left */
+  z-index: -1; /* Keeps them behind the main image */
+}
+
+/* When hovering over the container, fan out the images */
+.yaki-container:hover .yaki-fan {
+  opacity: 1;
+}
+
+/* Specific fan-out positions for each image */
+.yaki-container:hover .yaki-fan:nth-child(2) {
+  transform: translateX(100px);
+  z-index: 5;
+}
+
+.yaki-container:hover .yaki-fan:nth-child(3) {
+  transform: translateX(200px);
+  z-index: 4;
+}
+
+.yaki-container:hover .yaki-fan:nth-child(4) {
+  transform: translateX(300px);
+  z-index: 3;
+}
+
+.yaki-container:hover .yaki-fan:nth-child(5) {
+  transform: translateX(400px);
+  z-index: 2;
+}
+
+
+</style>
+
+<!-- <script is:inline src="/tobii.min.js"></script>
+<script defer>
+  const tobii = new Tobii();
+</script>
+ -->
+
+<script>
+	// Get the cursor image element
+	const cursorImage = document.getElementById('cursor-image');
+	const imageCursor = document.getElementById('image-cursor');
+  
+	// Select all the links with the 'hover-link' class
+	const links = document.querySelectorAll('.hover-link');
+  
+	// When hovering over a link, update the image
+	links.forEach(link => {
+	  link.addEventListener('mouseenter', (e) => {
+		// Get the image to display based on the `data-image` attribute
+		const imageSrc = link.getAttribute('data-image');
+		imageCursor.src = imageSrc; // Update the cursor image
+  
+		// Show the cursor image and start following the mouse
+		cursorImage.classList.add('show');
+	  });
+  
+	  link.addEventListener('mousemove', (e) => {
+		// Update the position of the cursor image to follow the mouse
+		cursorImage.style.left = `${e.pageX + 10}px`; // Position offset to the right
+		cursorImage.style.top = `${e.pageY + 10}px`; // Position offset below the cursor
+	  });
+  
+	  link.addEventListener('mouseleave', () => {
+		// Hide the cursor image when not hovering over the link
+		cursorImage.classList.remove('show');
+	  });
+	});
+  </script>
+
+<script>
+    import gsap from "gsap";
+    
+    // Select all the anchor elements with a class of "group" (your links)
+    const links = document.querySelectorAll('a.relative.group');
+    
+    let activeImage; // To keep track of the active image
+    let setX, setY;
+    
+    links.forEach((el) => {
+      const image = el.querySelector('img.hoverImage');
+      
+      // Ensure the image is on top of the content (z-index) and invisible initially
+      gsap.set(image, {
+        opacity: 0,
+        pointerEvents: 'none',
+        zIndex: 9999,  // Set a high z-index to make sure it's above the text
+        position: 'absolute',
+      });
+      
+      // Function to align image to mouse position
+      const align = (e) => {
+        const rect = el.getBoundingClientRect(); // Get the link's position on the page
+        setX(e.clientX - rect.left - image.clientWidth / 2); // Align image relative to link container
+        setY(e.clientY - rect.top - image.clientHeight / 2); // Align image relative to link container
+      };
+    
+      // Start following mouse movement
+      const startFollow = () => document.addEventListener("mousemove", align);
+    
+      // Stop following mouse movement
+      const stopFollow = () => document.removeEventListener("mousemove", align);
+    
+      // Fade in the image and make it visible
+      const fade = gsap.to(image, { autoAlpha: 1, ease: "none", paused: true });
+    
+      // Handle mouse enter
+      el.addEventListener('mouseenter', (e) => {
+        fade.play();
+        startFollow();
+        
+        if (activeImage) {
+          // If there's an actively-animating one, we should match its position here
+          gsap.set(image, { x: gsap.getProperty(activeImage, "x"), y: gsap.getProperty(activeImage, "y") });
+        }
+    
+        activeImage = image;
+    
+        // Use gsap.quickTo for smooth movement to the cursor position
+        setX = gsap.quickTo(image, "x", { duration: 0.6, ease: "power3" });
+        setY = gsap.quickTo(image, "y", { duration: 0.6, ease: "power3" });
+    
+        // Align the image to the mouse position immediately
+        align(e);
+      });
+    
+      // Handle mouse leave
+      el.addEventListener('mouseleave', () => {
+        fade.reverse(); // Fade out the image
+        stopFollow(); // Stop following the cursor
+      });
+    });
+</script>
+
+<script>
+
+	import { inView } from "motion";
+	const inviewelement20 = document.querySelector(".blink");
+	inView(
+		inviewelement20, () => {
+			inviewelement20.classList.add("blink-1")
+		}
+	)
+
+
+	const inviewelement = document.querySelector(".slide");
+	inView(
+		inviewelement, () => {
+			inviewelement.classList.add("slide-top")
+		}
+	)
+
+	const inviewelement5 = document.querySelector(".slide2");
+	inView(
+		inviewelement5, () => {
+			inviewelement5.classList.add("slide-top")
+		}
+	)
+	const inviewelement6 = document.querySelector(".slide3");
+	inView(
+		inviewelement6, () => {
+			inviewelement6.classList.add("slide-top")
+		}
+	)
+	const inviewelement7 = document.querySelector(".slide4");
+	inView(
+		inviewelement7, () => {
+			inviewelement7.classList.add("slide-top")
+		}
+	)
+	const inviewelement8 = document.querySelector(".slide5");
+	inView(
+		inviewelement8, () => {
+			inviewelement8.classList.add("slide-top")
+		}
+	)
+	const inviewelement9 = document.querySelector(".slide6");
+	inView(
+		inviewelement9, () => {
+			inviewelement9.classList.add("slide-top")
+		}
+	)
+	const inviewelement10 = document.querySelector(".slide7");
+	inView(
+		inviewelement10, () => {
+			inviewelement10.classList.add("slide-top")
+		}
+	)
+	const inviewelement11 = document.querySelector(".slide8");
+	inView(
+		inviewelement11, () => {
+			inviewelement11.classList.add("slide-top")
+		}
+	)
+	const inviewelement12 = document.querySelector(".slide9");
+	inView(
+		inviewelement12, () => {
+			inviewelement12.classList.add("slide-top")
+		}
+	)
+	
+
+
+	const inviewelement2 = document.querySelector(".load2");
+	inView(
+		inviewelement2, () => {
+			inviewelement2.classList.add("fade-in")
+		}
+	)
+
+	const inviewelement3 = document.querySelector(".load3");
+	inView(
+		inviewelement3, () => {
+			inviewelement3.classList.add("fade-in")
+		}
+	)
+
+	const inviewelement4 = document.querySelector(".load4");
+	inView(
+		inviewelement4, () => {
+			inviewelement4.classList.add("fade-in")
+		}
+	)
+</script>
