@@ -67,6 +67,10 @@ export default {
         // },
 
 		extend: {
+            fontFamily: {
+                sans: ["neue-haas-grotesk-display", "sans-serif"],
+                display: ["playfair-display", "monospace"],
+              },
 
         /* Tilføj din egen farvepalette nedenfor */
         // colors: {
