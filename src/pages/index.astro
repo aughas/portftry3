@@ -426,7 +426,7 @@ import Flipbook from "../components/Flipbook.astro"
   
 
   <!-- script som fungerar asbra i npm run dev -->
-<!-- <script>
+<script>
     import { gsap } from "gsap";
     
     // Select all the anchor elements with a class of "group" (your links)
@@ -488,65 +488,8 @@ import Flipbook from "../components/Flipbook.astro"
         stopFollow(); // Stop following the cursor
       });
     });
-</script> -->
-
-<script>
-  import { gsap } from "gsap";
-
-  // Select all the anchor elements with a class of "group" (your links)
-  const links = document.querySelectorAll('a.relative.group');
-
-  let activeImage; // To keep track of the active image
-  let setX, setY;
-
-  links.forEach((el) => {
-    const image = el.querySelector('img.hoverImage');
-
-    // Ensure the image is on top of the content (z-index) and invisible initially
-    gsap.set(image, {
-      opacity: 0,
-      pointerEvents: 'none',
-      zIndex: 9999,  // Set a high z-index to make sure it's above the text
-      position: 'absolute',
-    });
-
-    // Function to align image to mouse position
-    const align = (e) => {
-      const rect = el.getBoundingClientRect(); // Get the link's position on the page
-      setX = e.clientX - rect.left - image.clientWidth / 2; // Align image relative to link container
-      setY = e.clientY - rect.top - image.clientHeight / 2; // Align image relative to link container
-
-      // Update image position directly
-      gsap.to(image, {
-        x: setX, // Animate the x position
-        y: setY, // Animate the y position
-        duration: 0.6, // Duration of the animation
-        ease: "power3.out", // Easing function for smooth movement
-      });
-    };
-
-    // Handle mouse enter
-    el.addEventListener('mouseenter', (e) => {
-      // Fade in the image and make it visible
-      gsap.to(image, { autoAlpha: 1, ease: "none" });
-
-      // Start following mouse movement
-      document.addEventListener("mousemove", align);
-
-      // Set active image to the current one
-      activeImage = image;
-    });
-
-    // Handle mouse leave
-    el.addEventListener('mouseleave', () => {
-      // Fade out the image
-      gsap.to(image, { autoAlpha: 0, ease: "none" });
-
-      // Stop following mouse movement
-      document.removeEventListener("mousemove", align);
-    });
-  });
 </script>
+
 
 
 <script>
